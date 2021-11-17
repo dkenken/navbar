@@ -1,0 +1,32 @@
+nav {
+  background-color: dodgerblue;
+  font-size: 30px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+nav li {
+  padding: 2px;
+  color: lightgrey;
+}
+nav li:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+  color: black;
+}
+
+@media screen and (min-width: 760px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  nav li {
+    margin: 0 2rem;
+  }
+}
